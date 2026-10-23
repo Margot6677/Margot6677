@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="160" viewBox="0 0 1200 160" fill="none" role="img" aria-labelledby="greeting">
   <title id="greeting">Hi, I'm Margot.</title>
   <style>
-    .typing-window { animation: type-line 7s steps(15, end) infinite; }
-    .typing-cursor { animation: move-cursor 7s steps(15, end) infinite, blink-cursor .9s step-end infinite; }
-    @keyframes type-line { 0%, 6% { width: 0; } 46%, 88% { width: 378px; } 100% { width: 0; } }
-    @keyframes move-cursor { 0%, 6% { transform: translateX(0); } 46%, 88% { transform: translateX(378px); } 100% { transform: translateX(0); } }
+    .typing-window { animation: type-line 2.8s steps(15, end) .4s both; }
+    .typing-cursor { animation: move-cursor 2.8s steps(15, end) .4s both, blink-cursor .9s step-end infinite; }
+    @keyframes type-line { from { width: 0; } to { width: 378px; } }
+    @keyframes move-cursor { from { transform: translateX(0); } to { transform: translateX(378px); } }
     @keyframes blink-cursor { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
     @media (prefers-reduced-motion: reduce) { .typing-window { animation: none; width: 378px; } .typing-cursor { display: none; } }
   </style>
